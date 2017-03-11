@@ -1,0 +1,213 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this tpxplate file, choose Tools | Tpxplates
+and open the tpxplate in the editor.
+*/
+/* 
+    Created on : 4 Mar, 2017, 9:56:27 AM
+    Author     : rocky
+*/
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+}
+.site-wrapper table{
+    position: relative;
+    /*float: left;*/
+    width: 90%;
+    height: 100%; /* For at least Firefox */
+    padding: 2%;
+    margin: 0 auto;
+}
+.site-wrapper table tr:first-child td, .site-wrapper table tr:first-child{
+    height: 150px;
+    /*max-height: 100px;*/
+    overflow: hidden;
+}
+.site-wrapper-inner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+
+}
+.cover-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    display: block;
+    padding: 2px;
+}
+
+.masthead{
+    top: 0;
+}
+
+.masthead,
+.mastfoot,
+.cover-container {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+/*
+ * Header
+ */
+
+.masthead {
+    margin-bottom: 2px;
+}
+
+.masthead-brand {
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 4px;
+    float: right;
+    display: block;
+    width: 30%
+    
+    margin-bottom: 0;
+    -webkit-transition: all .8s; /* Chrome*/
+    -moz-transition: all .8s; /* Mozilla*/
+    -o-transition: all .8s; /* Opera*/
+    transition: all .8s;
+}
+
+.nav-masthead .nav-link {
+    padding: .25px 0;
+    margin: 0 10px;
+    font-weight: bold;
+    color: rgba(255,255,255,.5);
+    background-color: transparent;
+    border-bottom: .25px solid transparent;
+
+
+    -webkit-transition: all .5s; /* Chrome*/
+    -moz-transition: all .5s; /* Mozilla*/
+    -o-transition: all .5s; /* Opera*/
+    transition: all .5s;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1px;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.cover-heading{
+    color: #a17f1a;
+}
+.lead{
+    color: #ededed;
+}
+
+.cover-img{
+    width: 50px;
+}
+
+.icon-img{
+    width: 45px;
+}
+.white{
+    color:white;
+}
+.gold{
+    color:#a17f1a;
+}
+@media all and (min-width: 300px) and (max-width: 425px) {
+    .masthead-brand {
+        display: none !important;
+        
+    }
+}
+@media all and (min-width: 300px) {
+    .masthead-brand {
+        float: left;
+    }
+    .nav-masthead {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 1.5px;
+}
+.cover .btn-lg {
+    padding: .75px 1.25px;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media all and (min-width: 300px) {
+    /* Pull out the header and footer */
+    .masthead {
+        /*position: fixed;*/
+        top: 0;
+    }
+    .mastfoot {
+        /*position: fixed;*/
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media all and (min-width: 300px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%;
+    }
+}
