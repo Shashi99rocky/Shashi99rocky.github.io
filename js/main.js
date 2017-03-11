@@ -53,7 +53,7 @@ jQuery(function () {
         scrollingSpeed: 1000,
         responsive: true,
         resize: true,
-        verticalCentered: true,
+        verticalCentered: true  ,
         //Scrolling       
 
         autoScrolling: false,
@@ -74,6 +74,7 @@ jQuery(function () {
             init_size();
         },
     });
+    init_size();
 
     function init_size() {
         var height = parseInt(jQuery('.vertical-bottom .container-fluid').outerHeight());
@@ -95,10 +96,10 @@ jQuery(function () {
             height = parseInt(jQuery(window).height());
 //            height -= 50;
         }
-        jQuery('.intro').height(height);
+
 
         height = parseInt(jQuery('.portfolio .container').outerHeight());
-        console.log('window =' + height);
+
         if (parseInt(parseInt(jQuery(window).height())) > height) {
             height = parseInt(jQuery(window).height());
             console.log('container =' + height);
@@ -117,5 +118,4 @@ jQuery(function () {
 
     }
 
-    init_size();
 });
